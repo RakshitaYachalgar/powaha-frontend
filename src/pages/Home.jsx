@@ -76,36 +76,39 @@ export default function Home() {
         </p>
 
         <div className="steps-container">
-          <div className="step-card">
-            <span>1</span>
-            <h3>Church Registers</h3>
-            <p>A church signs up on POWAHA and submits details for verification.</p>
-          </div>
+  <div className="step-card">
+    <span>1</span>
+    <h3>Church Registers</h3>
+    <p>
+      A church signs up on POWAHA and submits details for verification.
+    </p>
+  </div>
 
-          <div className="step-card">
-            <span>2</span>
-            <h3>Platform Approval</h3>
-            <p>Platform administrators review and approve the church.</p>
-          </div>
+  <div className="step-card">
+    <span>2</span>
+    <h3>Platform Approval</h3>
+    <p>
+      Platform administrators review and approve the church.
+    </p>
+  </div>
 
-          <div className="step-card">
-            <span>3</span>
-            <h3>Employees Invited</h3>
-            <p>Approved churches invite pastors and staff with assigned roles.</p>
-          </div>
+  <div className="step-card">
+    <span>3</span>
+    <h3>Employees Invited</h3>
+    <p>
+      Approved churches invite pastors and staff with assigned roles.
+    </p>
+  </div>
 
-          <div className="step-card">
-            <span>4</span>
-            <h3>Members Join</h3>
-            <p>Followers join the church community and await church approval.</p>
-          </div>
+  <div className="step-card">
+    <span>4</span>
+    <h3>Community Grows</h3>
+    <p>
+      Members join, events are managed, and engagement grows securely.
+    </p>
+  </div>
+</div>
 
-          <div className="step-card">
-            <span>5</span>
-            <h3>Community Grows</h3>
-            <p>Churches manage events, updates, and engagement securely.</p>
-          </div>
-        </div>
       </section>
 
 
@@ -127,7 +130,7 @@ export default function Home() {
               <li>✔ Role-based access control</li>
               <li>✔ Secure data and accountability</li>
             </ul>
-            <a href="./church-register" className="secondary-btn small-btn">
+            <a href="./" className="secondary-btn small-btn">
               Register Your Church
             </a>
           </div>
@@ -141,7 +144,7 @@ export default function Home() {
               <li>✔ Safe, moderated environment</li>
               <li>✔ Belong to a digital faith family</li>
             </ul>
-            <a href="/RegisterStep1" className="secondary-btn small-btn">
+            <a href="/" className="secondary-btn small-btn">
               Join as a Follower
             </a>
           </div>
@@ -155,7 +158,8 @@ export default function Home() {
         <p className="section-subtitle3">
           POWAHA is designed with strict approval flows and role-based systems to protect every community.
         </p>
-
+          
+      <div className="security-container">
         <div className="security-grid">
           <div className="security-card">
             <h3>✅ Platform-Approved Churches</h3>
@@ -193,6 +197,16 @@ export default function Home() {
               Structured systems that support transparency and future auditing.
             </p>
           </div>
+          <div className="security-card">
+        
+        <h3>📜 Audit Trails & Activity History</h3>
+      <p>
+            All critical actions are recorded with timestamps, ensuring traceability,
+            accountability, and responsible platform usage.
+        </p>
+      </div>
+      </div>
+
         </div>
       </section>
             {/* FINAL CTA */}

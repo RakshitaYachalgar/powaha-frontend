@@ -1,3 +1,10 @@
+.contact-hero,
+.contact-info,
+.contact-form-section,
+.contact-faith {
+  font-family: 'Inter', sans-serif;
+}
+
 .contact-hero {
   padding: 120px 20px 60px;
   text-align: center;
@@ -5,13 +12,13 @@
 }
 
 .contact-hero h1 {
-  font-size: 3rem;
-  color: #0b1f3a;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #081b3a;
 }
 
 .contact-hero p {
-  max-width: 600px;
-  margin: 15px auto 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
   color: #555;
 }
 
@@ -20,7 +27,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  padding: 60px 10%;
+ padding: 60px 6%;
 }
 
 .contact-card {
@@ -72,7 +79,9 @@
   border: 1px solid #ddd;
   outline: none;
   font-size: 0.95rem;
+  font-family: inherit;
 }
+
 
 .contact-form button {
   margin-top: 10px;
@@ -103,4 +112,35 @@
   max-width: 650px;
   margin: 12px auto 0;
   color: #555;
+}
+@media (max-width: 768px) {
+  .contact-info {
+    padding: 50px 5%;
+  }
+
+  .contact-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-hero p {
+    font-size: 1rem;
+  }
+
+  .contact-form-box {
+    padding: 30px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info {
+    padding: 40px 16px;
+  }
+
+  .contact-hero {
+    padding: 100px 16px 50px;
+  }
+
+  .contact-hero h1 {
+    font-size: 1.9rem;
+  }
 }

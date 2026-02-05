@@ -9,27 +9,29 @@ export default function Navbar() {
   return (
     <>
       <nav className="navbar">
-
         {/* LEFT */}
-        <div className="nav-left">
+        <Link to="/" className="nav-left" onClick={() => setOpen(false)}>
           <img src={logo} alt="POWAHA" className="nav-logo" />
           <span className="brand">POWAHA</span>
-        </div>
+        </Link>
 
-     
         <div className="nav-center">
           <Link to="/">Home</Link>
           <Link to="/contact">Contact</Link>
-        </div> 
+        </div>
 
         {/* RIGHT */}
         <div className="nav-right">
-          <Link to="/" className="nav-link">Login</Link>
-          <Link to="/" className="nav-btn">Get Started</Link>
+          <Link to="/" className="nav-link">
+            Login
+          </Link>
+          <Link to="/" className="nav-btn">
+            Get Started
+          </Link>
 
           {/* HAMBURGER */}
-          <div 
-            className={`hamburger ${open ? "active" : ""}`} 
+          <div
+            className={`hamburger ${open ? "active" : ""}`}
             onClick={() => setOpen(!open)}
           >
             <span></span>
@@ -41,10 +43,20 @@ export default function Navbar() {
 
       {/* MOBILE MENU */}
       <div className={`mobile-menu ${open ? "show" : ""}`}>
-        <Link to="/" onClick={() => setOpen(false)}>Home</Link>
-        <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
-        <Link to="/login" onClick={() => setOpen(false)}>Login</Link>
-        <Link to="/RegisterRole" className="mobile-btn" onClick={() => setOpen(false)}>
+        <Link to="/" onClick={() => setOpen(false)}>
+          Home
+        </Link>
+        <Link to="/contact" onClick={() => setOpen(false)}>
+          Contact
+        </Link>
+        <Link to="/login" onClick={() => setOpen(false)}>
+          Login
+        </Link>
+        <Link
+          to="/RegisterRole"
+          className="mobile-btn"
+          onClick={() => setOpen(false)}
+        >
           Get Started
         </Link>
       </div>

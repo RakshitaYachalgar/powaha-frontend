@@ -114,6 +114,7 @@ export default function Home() {
 
             {/* FOR CHURCHES VS MEMBERS */}
       <section className="audience-section">
+      <div className="audience-container">
         <h2 className="section-title2">Built for Churches and Communities</h2>
         <p className="section-subtitle2">
           POWAHA empowers church leaders while creating a safe space for believers to connect.
@@ -149,6 +150,21 @@ export default function Home() {
             </a>
           </div>
 
+          <div className="audience-card highlighted">
+            <h3>🤝 For Community Partners</h3>
+            <ul>
+              <li>✓ Manage outreach leads</li>
+              <li>✓ Monitor performance & goals</li>
+              <li>✓ Earn impact-based rewards </li>
+              <li>✓ Work within assigned regions</li>
+              <li>✓ Secure church collaboration</li>
+            </ul>
+            <a href="/" className="secondary-btn small-btn">
+              Join as a Community Partner
+            </a>
+          </div>
+
+        </div>
         </div>
       </section>
 

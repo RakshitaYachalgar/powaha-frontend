@@ -235,7 +235,7 @@ body {
   font-size: 18px;
 }
 .audience-section {
-  padding: 100px 10%;
+  padding: 120px 0;
   background: white;
   text-align: center;
 }
@@ -243,19 +243,32 @@ body {
 .audience-grid {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: nowrap;       /* 🔥 Prevent wrapping */
+  overflow-x: auto;        /* Allow scroll instead */
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+  grid-template-columns: repeat(3, 1fr);
+}
+.audience-container {
+  max-width: 1350px;   /* increase from ~1200 */
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 .audience-card {
   background: linear-gradient(135deg, #081b3a, #0f2e63);
-  padding: 40px 30px;
+  padding:  55px 42px;
   border-radius: 20px;
   box-shadow: 0 12px 35px rgba(0,0,0,0.05);
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 0 0 320px;   /* Fixed width */
+  
+   scroll-snap-type: x mandatory;
 }
 
 .audience-card h3 {
@@ -613,5 +626,22 @@ body {
   .how-it-works,
   .security-section {
     padding: 60px 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .audience-card {
+    flex: 0 0 300px;
+    padding: 28px 22px;
+  }
+
+  .audience-grid {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .audience-card {
+    flex: 0 0 280px;
+    padding: 24px 20px;
   }
 }
